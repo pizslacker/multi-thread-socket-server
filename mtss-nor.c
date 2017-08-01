@@ -53,7 +53,7 @@ void *my_thread(void * arg)
   unsigned int   myClient_s; // kopier støpsel.	
   //---andre lokale variabler ------------------------------------------------
   char           in_buf[BUF_SIZE];     // Inn-buffer for GET forespørsler.
-  char           out_buf[BUF_SIZE];    // Ut-buffer for HTML respons.
+  char           out_buf[BUF_SIZE];    // Ut-buffer for HTTP-respons.
   char           *file_name;           // Filnavn.
   unsigned int   fh;                   // Fil håndterer (fil deskriptor).
   unsigned int   buf_len;              // Buffer lengde for fil-lesing.
