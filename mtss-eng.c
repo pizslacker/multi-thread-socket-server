@@ -52,7 +52,7 @@ void *my_thread(void * arg)
    unsigned int   myClient_s; //copy socket	
 // other local variables ------------------------------------------------------
   char           in_buf[BUF_SIZE];     // Input buffer for GET request.
-  char           out_buf[BUF_SIZE];    // Output buffer for HTML response.
+  char           out_buf[BUF_SIZE];    // Output buffer for HTTP-response.
   char           *file_name;           // File name.
   unsigned int   fh;                   // File handle (file descriptor).
   unsigned int   buf_len;              // Buffer length for file reads.
