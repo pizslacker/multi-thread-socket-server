@@ -120,16 +120,16 @@ void *my_thread(void * arg)
 int main(void)
 {
   /* local variables for socket connection -------------------------------- */
-  unsigned int			server_s;				// Server socket descriptor
-  struct sockaddr_in	server_addr;			// Server Internet address
-  //unsigned int			client_s;			// Client socket descriptor
-  struct sockaddr_in	client_addr;			// Client Internet address
-  struct in_addr		client_ip_addr;			// Client IP address
-  int					addr_len;				// Internet address length
+  unsigned int			server_s;		// Server socket descriptor
+  struct sockaddr_in		server_addr;		// Server Internet address
+  //unsigned int			client_s;	// Client socket descriptor
+  struct sockaddr_in		client_addr;		// Client Internet address
+  struct in_addr		client_ip_addr;		// Client IP address
+  int				addr_len;		// Internet address length
  
-  unsigned int			ids;					// holds thread args
-  pthread_attr_t		attr;					//	pthread attributes
-  pthread_t				threads;				// Thread ID (used by OS)
+  unsigned int			ids;			// holds thread args
+  pthread_attr_t		attr;			// pthread attributes
+  pthread_t			threads;		// Thread ID (used by OS)
  
   /* create a new socket -------------------------------------------------- */
   server_s = socket(AF_INET, SOCK_STREAM, 0);
@@ -165,11 +165,11 @@ int main(void)
     {
 		/* Create a child thread --------------------------------------- */
 		ids = client_s;
-        pthread_create (					/* Create a child thread        */ 
+        pthread_create (				/* Create a child thread        */ 
                    &threads,				/* Thread ID (system assigned)  */     
-                   &attr,					/* Default thread attributes    */
+                   &attr,				/* Default thread attributes    */
                    my_thread,				/* Thread routine               */
-                   &ids);					/* Arguments to be passed       */
+                   &ids);				/* Arguments to be passed       */
  
     }
   }
