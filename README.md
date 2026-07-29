@@ -7,4 +7,4 @@ Compile the program with these arguments to gcc:
 gcc -Wall <program.c> -o <program> -lpthread
 ```
 
-- "lpthread" is the switch-argument to turn on POSIX threads.
+- `lpthread` is the switch-argument to turn on POSIX threads.
