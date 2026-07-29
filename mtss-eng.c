@@ -1,14 +1,3 @@
-/*
-*
-* Multi-Threaded web server using posix pthreads.
-* Simple web server, capable of serving simple html, 
-* jpg, gif & text files.
-*
-* @created   20160826-01:22-GMT+1
-* @modified  20160826-01:22-GMT+1
-*
-*/
- 
 //---Include files ------------------------------------------------------------
 #include <stdio.h>          // for printf()
 #include <stdlib.h>         // for exit()
